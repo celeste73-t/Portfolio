@@ -1,0 +1,77 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #242424;
+  color: white;
+  overflow-x: hidden;
+}
+
+.header{
+  height: 63px;
+  position: relative;
+}
+
+.debut{
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  left: 0;
+}
+
+.project{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  padding: 0 5px;
+  border-radius: 5px;
+  color: #242424;
+}
+
+.svg-icon2{
+  width: 50px;
+  height: 50px;
+}
+
+.in_button{
+  margin: 0;
+}
+
+.language_button{ 
+  background-color: white;
+  height: 50px;
+  border: 1px solid black ;
+  border-radius: 5px;
+  color: #242424;
+  position: absolute;
+  right: 0;
+}
+
+a{
+  all:unset;
+}
+
+a:hover{
+  cursor: pointer;
+}
+
+h1{
+  font-size: 5rem;
+  text-align: center;
+  margin: 0;
+  width: inherit;
+}
+
+h3{
+  margin: 0px;
+}
+
+.svg-icon{
+  width: 75px;
+  height: 75px;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid black;
+}
