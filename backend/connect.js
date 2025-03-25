@@ -22,4 +22,4 @@ module.exports = {
     }
 }
 
-console.log("the server is running")
+console.log("the database is connected")
