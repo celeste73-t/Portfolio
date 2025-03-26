@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { getLanguage_Card } from "../../api";
+import { useEffect, useState } from "react";
 
 function Language_Card(props) {
 
@@ -83,6 +85,8 @@ function Language_Card(props) {
             var name = "placeholder";
             break;
     }
+
+
 
     return(
         <Link className= {`language_card ${props.anim? 'animate animate'+(props.id): ''}`} to={"/projects"}>
