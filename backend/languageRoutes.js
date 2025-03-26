@@ -27,3 +27,5 @@ languageRoutes.route("/languages/:id").get(async(request, response) => {
         throw new Error("Data was not found")
     }
 })
+
+module.exports = languageRoutes
