@@ -3,6 +3,7 @@ import Footer from "../Component/Footer";
 import Specialties_Card from "../Component/Specialties_Card";
 import Language_Card from "../Component/Language_Card";
 import Header from "../Component/Header";
+import { getMainPage, getLanguage_Card, getLanguage_Cards } from "../../api";
 import '../Style/home.css'
 
 function Home() {
