@@ -3,6 +3,7 @@ const express = require("express")
 const cors = require("cors")
 const language = require("./languageRoutes")
 const mainPage = require("./mainPageRoutes")
+const specialties = require('./specialtiesRoutes')
 
 const app = express()
 const PORT = 3000
@@ -10,6 +11,7 @@ const PORT = 3000
 app.use(cors())
 app.use(express.json())
 app.use(language)
+app.use(specialties)
 app.use(mainPage)
 
 app.listen(PORT, () => {

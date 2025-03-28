@@ -1,6 +1,5 @@
 const express = require("express")
 const database = require("./connect")
-const ObjectId = require("mongodb").ObjectId
 
 let mainPageRoutes = express.Router()
 

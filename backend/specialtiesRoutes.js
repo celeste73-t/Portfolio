@@ -1,13 +1,13 @@
 const express = require("express")
 const database = require("./connect")
 
-let languageRoutes = express.Router()
+let specialtiesRoutes = express.Router()
 
 // 1 - Retrieve All
-// http://localhost:3000/languages
-languageRoutes.route("/languages").get(async(request, response) => {
+// http://localhost:3000/specialties
+specialtiesRoutes.route("/specialties").get(async(request, response) => {
     let db = database.getDb()
-    let data = await db.collection("Language_Card").find({}).toArray()
+    let data = await db.collection("Specialties_Card").find({}).toArray()
     if (data.length > 0) {
         response.json(data) // return equivalent
     }else {
@@ -16,10 +16,10 @@ languageRoutes.route("/languages").get(async(request, response) => {
 })
 
 // 2 - Retrieve One
-// http://localhost:3000/languages/28374
-languageRoutes.route("/languages/:id").get(async(request, response) => {
+// http://localhost:3000/specialties/28374
+specialtiesRoutes.route("/specialties/:id").get(async(request, response) => {
     let db = database.getDb()
-    let data = await db.collection("Language_Card").findOne({_id: request.params.id})
+    let data = await db.collection("Specialties_Card").findOne({_id: request.params.id})
     if (Object.keys(data).length > 0) {
         response.json(data) // return equivalent
     }else {
@@ -27,4 +27,4 @@ languageRoutes.route("/languages/:id").get(async(request, response) => {
     }
 })
 
-module.exports = languageRoutes
+module.exports = specialtiesRoutes
